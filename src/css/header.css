@@ -94,8 +94,8 @@
   right: -270px;
 
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; /* Distributes links evenly */
+  flex-direction: row;
+  justify-content:right;
 
   border: 10px solid rgb(43, 42, 42);
   border-top: none;
@@ -119,8 +119,8 @@
 }
 
 .burger-links li{
-  margin-right:35px;
   margin-top: 5px;
+  margin-right: 25px;
   margin-bottom: 30px;
 }
 
@@ -133,4 +133,20 @@
 
 .burger-links a:hover{
   color: rgb(0, 185, 40);
+}
+
+.link-icons {
+  list-style: none;
+  margin: 0;
+}
+
+.server-icon{
+  height:80px;
+  margin-right: -20px;
+  margin-bottom: -5px;
+}
+
+.about-icon {
+  height: 50px;
+  margin-right: -5px;
 }
