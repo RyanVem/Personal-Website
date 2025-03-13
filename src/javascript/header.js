@@ -4,54 +4,29 @@ function insertHeader() {
     .then(data => document.getElementById('header').innerHTML = data);
 }
 
+// Toggles the visibility of the burger menu
 let currentBurgerState = false;
-
 function toggleBurgerMenu(){
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 975) {
-      currentBurgerState = false;
-      document.querySelector(".js-burger-menu").innerHTML = `
-      <div class="burger-menu">
-        <ul class="burger-links" >
-          <li><a href="index.html">Projects</a></li>
-          <li><a href="index.html">About</a></li>
-          <li><a href="index.html">Blog</a></li>
-          <li><a href="index.html">Contact</a></li>
-        </ul>
-      </div>`
-    }
-  });
+  const burgerMenu = document.querySelector(".burger-menu"); 
 
-  if (currentBurgerState === false){
-    currentBurgerState = true;
-    document.querySelector(".js-burger-menu").innerHTML = `
-      <div class="burger-menu active">
-          <ul class="burger-links" >
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Blog</a></li>
-            <li><a href="index.html">Contact</a></li>
-          </ul>
-        </div>
-    `
-  } else{
-    currentBurgerState = false;
-    document.querySelector(".js-burger-menu").innerHTML = `
-      <div class="burger-menu">
-          <ul class="burger-links" >
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Blog</a></li>
-            <li><a href="index.html">Contact</a></li>
-          </ul>
-        </div>
-    `
+  if (currentBurgerState) {
+    burgerMenu.classList.remove("active");
+  } else {
+    burgerMenu.classList.add("active");
   }
+
+  currentBurgerState = !currentBurgerState;
 }
 
-function loadPage() {
-  insertHeader()
-}
+// Removes the burger menu when the screen is > 975px
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 975) {
+    const burgerMenu = document.querySelector(".burger-menu");
+    if (burgerMenu) burgerMenu.classList.remove("active");
+    currentBurgerState = false;
+  }
+});
 
-loadPage();
+// Loads the header on the page
+insertHeader()
 
