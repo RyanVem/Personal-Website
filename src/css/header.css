@@ -108,11 +108,59 @@
 
 .burger-menu.active {
   right: 0px;
-  height: 275px;
+  height: 370px;
   opacity: 1;
   
 }
 
+.burger-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: 0px;
+  margin-right:40px;
+}
+
+.burger-icons img {
+  height: 80px;
+  margin-top: 10px;
+}
+
+.burger-links {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  margin: 0px;
+  margin-top: 35px;
+  margin-right: 25px;
+  gap: 62.5px;
+}
+
+.burger-links a{
+  text-decoration: none;
+  color: rgb(223, 223, 223);
+  font-size: 25px;
+  transition: color 0.5s ease;;
+}
+
+.project-link:hover a{
+  color: rgb(255, 130, 74);
+}
+
+.about-link:hover a{
+  color: rgb(18, 176, 200);
+}
+
+.blog-link:hover a{
+  color: rgb(80, 190, 88);
+}
+
+.contact-link:hover a{
+  color: rgb(255, 214, 91);
+}
+
+/*
 .burger-links {
   list-style: none;
   height:100%
@@ -141,12 +189,27 @@
 }
 
 .server-icon{
-  height:80px;
+  height:70px;
   margin-right: -20px;
-  margin-bottom: -5px;
+  margin-bottom: 5px;
 }
 
 .about-icon {
-  height: 50px;
+  height: 45px;
   margin-right: -5px;
+  margin-bottom: 17.5px;
 }
+
+.blog-icon {
+  height: 45px;
+  margin-right: -5px;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  height: 45px;
+  margin-right: -5px;
+  margin-bottom: 10px;
+}
+
+*/
