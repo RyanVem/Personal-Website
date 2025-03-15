@@ -4,3 +4,12 @@ body {
   background-color: rgb(223, 223, 223);
   margin: 0;
 }
+
+.eye-catch {
+  color: rgb(43, 42, 42);
+  height: 1000px;
+  background-color: rgb(115, 115, 115);
+}
+.eye-catch h1 {
+  margin: 0px;
+}
