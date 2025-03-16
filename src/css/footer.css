@@ -50,15 +50,11 @@
   font-weight: lighter;
   margin: 0px;
   margin-bottom: 15px;
-}
+}*/
 
 .footer-right {
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
-  margin-bottom: 90px;
-  margin-top: 90px;
-  gap: 50px
 }
 
 .social-icon {
@@ -70,8 +66,7 @@
 .social-icon img {
   height: 80px;
   border-radius: 15px;
-}*/
-
+}
 
 .footer-bar {
   background-color: rgb(43, 42, 42);
@@ -94,6 +89,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
 
   border: 4px solid rgb(223, 223, 223);
   border-radius: 25px;
@@ -111,16 +107,44 @@
   height: 50px;
 }
 
+.footer-headings h2{
+  transition: color 0.5s ease;
+}
+
+.footer-headings h2:hover{
+  color: rgb(0, 150, 35);
+}
+
 .ul-img {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 15px;
+  gap: 14px;
   margin-right: 25px;
+} 
+
+.ul-img img.rotate-img {
+  transform: rotate(-90deg)
+}
+
+.ul-img button{
+  border: none;
+  background: none;
 }
 
 .breakout-menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(70, 70, 70);
+  border: 4px solid rgb(49, 129, 68);
+  margin-left: 275px;
+  border-radius: 25px;
+  width: 35vw;
+  max-width: 400px;
+}
+
+.breakout-menu.active {
+  display: flex;
   border: 4px solid rgb(49, 129, 68);
   border-radius: 25px;
-  height: 250px
 }
