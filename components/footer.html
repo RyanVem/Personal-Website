@@ -1,109 +1,61 @@
 <footer>
   <div class="footer-bar">
-    <!--
-    <ul class="footer-links" >
-      <li>
-        <a class="heading" href="index.html">Projects:</a>
-        <a href="index.html"><p>OPNsense Firewall</p></a>
-        <a href="index.html"><p>Ollama / Open WebUI</p></a>
-        <a href="index.html"><p>VPS Reverse Proxy</p></a>
-        <a href="index.html"><p>Much More</p></a>
-      </li>
+    <div class="footer-headings">
 
-      <li>
-        <a class="heading" href="index.html">About:</a>
-        <a href="index.html"><p>Myself</p></a>
-        <a href="index.html"><p>Resume</p></a>
-        <a href="index.html"><p>My Site</p></a>
-      </li>
+      <ul>
+        <li>
+          <h2>Projects</h2>
+        </li>
+        <li>
+          <h2>About</h2>
+        </li>
+        <li>
+          <h2>Blog</h2>
+        </li>
+        <li>
+          <h2>Contact</h2>
+        </li>
+      </ul>
 
-      <li>
-        <a class="heading" href="index.html">Blog:</a>
-        <a href="index.html"><p>Latest</p></a>
-        <a href="index.html"><p>Most Popular</p></a>
-
-      </li>
-
-      <li>
-        <a class="heading" href="index.html">Contact:</a>
-        <p>Email: ryanvemulapalli@gmail.com</p>
-        <p>Phone: (647) - 700 - 8784</p>
-        <p>Location: Oakville, Ontario, Canada</p>
-      </li>
-    </ul>
-    -->
-
-
-    <!--
-    <div class="footer-right">
-      <div class="footer-icon">
-        <a href="index.html">
-          <h1>Ryan Vemulapalli</h1>
-        </a>
-      </div>
-
-      <div class="social-icon">
-        <a href="index.html"><img src="../assets/icons/project-icon-orange.png"></img></a>
-        <a href="index.html"><img src="../assets/icons/about-icon-blue.png"></img></a>
-        <a class="github-icon" href="https://github.com/RyanVem"><img src="../assets/icons/github-icon.png"></img></a>
-        <a class="test-icon" href="https://www.linkedin.com/in/ryan-vemulapalli/"><img src="../assets/icons/linkedin-icon.webp"></img></a>
-      </div>
-    </div>
-    -->
-
-    <div class="footer-content">
-
-      <div class="footer-headings">
-
-        <ul>
-          <li>
-            <h2>Projects</h2>
-          </li>
-          <li>
-            <h2>About</h2>
-          </li>
-          <li>
-            <h2>Blog</h2>
-          </li>
-          <li>
-            <h2>Contact</h2>
-          </li>
-        </ul>
-  
-        <ul class="ul-img">
-          <li>
-            <button class="project-button" onclick="toggleBreakOutMenu('project')"><img class="" src="../assets/icons/dropdown-icon.png"></img></button>
-          </li>
-          <li>
-            <button class="about-button" onclick="toggleBreakOutMenu('about')"><img class="" src="../assets/icons/dropdown-icon.png"></img></button>
-          </li>
-          <li>
-            <button class="blog-button" onclick="toggleBreakOutMenu('blog')"><img class="" src="../assets/icons/dropdown-icon.png"></img></button>
-          </li>
-          <li>
-            <button class="contact-button" onclick="toggleBreakOutMenu('contact')"><img class="" src="../assets/icons/dropdown-icon.png"></img></button>
-          </li>
-        </ul>
-
-      </div>
+      <ul class="ul-img">
+        <li>
+          <button class="project-button" onclick="toggleBreakOutMenu('project')"><img id='project' class="drop-icon" src="../assets/icons/dropdown-icon.png"></img></button>
+        </li>
+        <li>
+          <button class="about-button" onclick="toggleBreakOutMenu('about')"><img id='about' class="drop-icon" src="../assets/icons/dropdown-icon.png"></img></button>
+        </li>
+        <li>
+          <button class="blog-button" onclick="toggleBreakOutMenu('blog')"><img id='blog' class="drop-icon" src="../assets/icons/dropdown-icon.png"></img></button>
+        </li>
+        <li>
+          <button class="contact-button" onclick="toggleBreakOutMenu('contact')"><img id='contact' class="drop-icon" src="../assets/icons/dropdown-icon.png"></img></button>
+        </li>
+      </ul>
 
       <div id="breakout" class="breakout-menu"></div>
 
-      <div class="footer-right">
-        <div class="footer-icon">
-          <a href="index.html">
-            <h1>Ryan Vemulapalli</h1>
-          </a>
-        </div>
-  
-        <div class="social-icon">
+    </div>
+
+    <div class="footer-right large">
+      <div class="footer-icon">
+        <a class="footer-icon-link" href="index.html">
+          <h1>Ryan</h1>
+          <h1>Vemulapalli</h1>
+        </a>
+      </div>
+
+      <hr>
+
+      <div class="social-icon">
+        <div class="social-row">
           <a href="index.html"><img src="../assets/icons/project-icon-orange.png"></img></a>
           <a href="index.html"><img src="../assets/icons/about-icon-blue.png"></img></a>
+        </div>
+        <div class="social-row">
           <a class="github-icon" href="https://github.com/RyanVem"><img src="../assets/icons/github-icon.png"></img></a>
           <a class="test-icon" href="https://www.linkedin.com/in/ryan-vemulapalli/"><img src="../assets/icons/linkedin-icon.webp"></img></a>
         </div>
       </div>
-
     </div>
 
   </div>
