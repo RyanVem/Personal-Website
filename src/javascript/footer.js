@@ -4,6 +4,7 @@ function insertFooter() {
     .then(data => document.getElementById('footer').innerHTML = data);
 }
 
+/*
 let data = '';
 function insertBreakMenu(buttonId) {
 
@@ -83,6 +84,7 @@ window.addEventListener("resize", () => {
   }
 
 });
+*/
 
 // Loads the footer on the page
 insertFooter()
