@@ -1,5 +1,5 @@
 function insertFooter() {
-  fetch('../../components/footer.html')
+  fetch('/components/Footer/footer.html')
     .then(response => response.text())
     .then(data => document.getElementById('footer').innerHTML = data);
 }
