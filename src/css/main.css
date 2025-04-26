@@ -7,9 +7,10 @@ body {
 
 .eye-catch {
   color: rgb(43, 42, 42);
-  height: 1000px;
-  background-color: rgb(115, 115, 115);
+  background-color: rgb(41, 63, 70);
+
+  padding: 50px;
 }
-.eye-catch h1 {
+.eye-catch {
   margin: 0px;
 }

@@ -1,7 +1,7 @@
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  background-color:  #1a252e;
+  background-color:  rgb(26, 37, 46);
   padding-left: clamp(25px, 6vw, 50px);
   padding-top: 20px;
   padding-bottom: 20px;

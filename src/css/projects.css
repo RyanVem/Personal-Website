@@ -1,0 +1,172 @@
+.project-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:50px;
+
+  color: rgb(43, 42, 42);
+  background-color: rgb(41, 63, 70);
+
+  padding: 40px;
+}
+
+.project-block {
+  border: 3px solid rgb(153, 153, 153);
+  border-radius: 25px;
+  background-color: rgb(26, 37, 46);
+  color: rgb(153, 153, 153);
+  width: 450px;
+  height: auto;
+
+  padding:15px;
+}
+
+.project-block a{
+  text-decoration: none;
+}
+
+.project-block img{
+  width: 100%;
+  border-radius: 25px;
+}
+
+.project-block h2{
+  margin: 0;
+  margin-top: 10px;
+  font-size: 25px;
+  color: rgb(125, 163, 36);
+}
+
+.project-block h4{
+  margin: 0;
+  margin-top: 10px;
+
+  color: rgb(125, 163, 36);
+}
+
+.project-block p{
+  font-size: 16.5px;
+}
+
+.left-section {
+  background-color: rgb(42, 100, 86);
+  padding: 3vw;
+
+  display: flex;
+  flex-direction: column;
+}
+.left-section img{
+  width: 50%;
+  height: fit-content;
+  border: 3px solid rgb(153, 153, 153);
+}
+
+.left-section h1 {
+  margin: 0;
+  margin-left: 3vw;
+
+  font-size: 3vw;
+}
+
+
+
+.project-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  transition: display 0.5s ease;
+}
+
+.project-slide.hide {
+  display: none;
+}
+
+
+.divider-section {
+  padding: 3vw;
+  background-color:  rgb(43, 42, 42);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.divider-section h1{
+  margin: 0;
+  font-size: 2.5vw;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  background-color: rgb(41, 63, 70);
+  padding: 3vw;
+}
+
+.right-section img{
+  width: 50%;
+  border-radius: 1vw;
+  border: 3px solid rgb(153, 153, 153);
+}
+
+.right-section h1{
+  margin: 0;
+  margin-right: 3vw;
+  text-align: right;
+
+  font-size: 3vw;
+}
+
+@media (max-width: 1100px) {
+  .project-block {
+    width: 100%;
+    height: auto;
+  
+    padding:15px;
+  }
+  .project-block h2{
+    font-size: 19px;
+  }
+  .project-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+  }
+  .left-section img{
+    width: 100%;
+    height: fit-content;
+  }
+  .left-section h1 {
+    margin: 0;
+    margin-top: 15px;
+  
+    font-size: 3.5vw;
+  }
+
+  .divider-section h1{
+    margin: 0;
+    font-size: 5vw;
+  }
+
+  .right-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items:center;
+  }
+  .right-section img{
+    width: 100%;
+    height: fit-content;
+  }
+  .right-section h1 {
+    margin: 0;
+    margin-top: 15px;
+  
+    font-size: 3.5vw;
+  }
+  
+}
