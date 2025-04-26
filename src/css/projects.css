@@ -15,7 +15,7 @@
   border-radius: 25px;
   background-color: rgb(26, 37, 46);
   color: rgb(153, 153, 153);
-  width: 450px;
+  width: 375px;
   height: auto;
 
   padding:15px;
@@ -51,6 +51,7 @@
 .left-section {
   background-color: rgb(42, 100, 86);
   padding: 3vw;
+  padding-bottom: 2vw;
 
   display: flex;
   flex-direction: column;
@@ -58,6 +59,7 @@
 .left-section img{
   width: 50%;
   height: fit-content;
+  border-radius: 1vw;
   border: 3px solid rgb(153, 153, 153);
 }
 
@@ -68,20 +70,46 @@
   font-size: 3vw;
 }
 
-
-
 .project-slide {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-
-  transition: display 0.5s ease;
 }
 
 .project-slide.hide {
   display: none;
 }
 
+.project-slide.right {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5vw;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin: 0 15px;
+  background-color: rgb(185, 185, 185);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.dot:hover {
+  background-color: darkgray;
+  transform: scale(1.2); /* make the dot slightly bigger */
+}
+
+/* Active dot */
+.dot.active {
+  background-color: rgb(41, 41, 41);
+}
 
 .divider-section {
   padding: 3vw;
@@ -95,13 +123,10 @@
 .divider-section h1{
   margin: 0;
   font-size: 2.5vw;
+  text-align: center;
 }
 
 .right-section {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-
   background-color: rgb(41, 63, 70);
   padding: 3vw;
 }
@@ -136,6 +161,16 @@
     justify-content: flex-start;
     align-items:center;
   }
+
+  .project-slide.right {
+    flex-direction: column;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 5px 10px;
+  }
   .left-section img{
     width: 100%;
     height: fit-content;
@@ -154,7 +189,7 @@
 
   .right-section {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-start;
     align-items:center;
   }

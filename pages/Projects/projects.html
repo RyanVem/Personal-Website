@@ -45,41 +45,72 @@
     <div class="divider-section">
       <h1>Recommended Projects for your Homelab</h1>
     </div>
-
-    <div class="left-section">
-      <div class="project-slide">
+    
+    <div class="left-section slideshow">
+      <div class="project-slide left">
         <img src="/assets/images/ProxmoxUI.png"></img>
 
         <h1>Windows 11 VM w/ GPU, USB, & Network Passthrough</h1>
       </div>
-      <div class="project-slide hide">
+      <div class="project-slide left hide">
         <img src="/assets/images/ProxmoxUI.png"></img>
 
-        <h1>Windows 11 VM w/ GPU, USB, & Network Passthrough 2</h1>
+        <h1>Get Started with TrueNAS w/ Cloud Backup & SMB</h1>
       </div>
-      <div class="project-slide hide">
+      <div class="project-slide left hide">
         <img src="/assets/images/ProxmoxUI.png"></img>
 
-        <h1>Windows 11 VM w/ GPU, USB, & Network Passthrough 3</h1>
+        <h1>Oracle Cloud Linux VM as a Tailscale Exit Node</h1>
+      </div>
+      <div class="project-slide left hide">
+        <img src="/assets/images/ProxmoxUI.png"></img>
+
+        <h1>Ubuntu VM for Docker w/ Multi GPU Passthrough</h1>
       </div>
 
-      <button id="nextBtn">Next</button>
+      <div class="dots">
+        <button class="dot" data-slide="0"></button>
+        <button class="dot" data-slide="1"></button>
+        <button class="dot" data-slide="2"></button>
+        <button class="dot" data-slide="3"></button>
+      </div>
+
     </div>
     
     <div class="divider-section">
       <h1>Useful Guides for your Network</h1>
     </div>
 
-    <div class="right-section">
-      <img src="/assets/images/OPNsenseUI.png"></img>
+    <div class="right-section slideshow">
+      <div class="project-slide right">
+        <img src="/assets/images/OPNsenseUI.png"></img>
 
-      <h1>VPN Gateway w/ OPNsense & Mullvad VPN</h1>
+        <h1>VPN Gateway w/ OPNsense & Mullvad VPN</h1>
+      </div>
+      <div class="project-slide right hide">
+        <img src="/assets/images/ProxmoxUI.png"></img>
+
+        <h1>PiHole DNS w/ Network Wide Ad Blocking</h1>
+      </div>
+      <div class="project-slide right hide">
+        <img src="/assets/images/ProxmoxUI.png"></img>
+
+        <h1>Easy Reverse Proxy using Nginx Proxy Manager</h1>
+      </div>
+
+      <div class="dots">
+        <button class="dot" data-slide="0"></button>
+        <button class="dot" data-slide="1"></button>
+        <button class="dot" data-slide="2"></button>
+      </div>
+      
     </div>
     
     <div id="footer"></div>
     
     <script src="/components/Header/header.js"></script>
     <script src="/components/Footer/footer.js"></script>
+    <script src="/pages/Projects/projects.js"></script>
 
   </body>
 </html>
